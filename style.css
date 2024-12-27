@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.container:hover{
+    box-shadow: 5px 5px 5px yellow;
+    opacity: 0.8;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.counter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#minus {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+#plus {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#reset {
+    background-color: #2196F3;
+    color: white;
+    font-size: 1rem;
+}
+
+#count {
+    font-size: 4rem;
+    margin: 0 1rem;
+    color: white;
+    min-width: 100px;
+}
+
+.counter {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 2rem;
+    border-radius: 15px;
+}
